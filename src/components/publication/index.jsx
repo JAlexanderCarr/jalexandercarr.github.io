@@ -71,6 +71,7 @@ const Publication = ({ loading, googleAnalytics }) => {
                     government and private organizations to solve the internet
                     connectivity problem.
                   </p>
+
                 </div>
               </div>
             </div>
