@@ -6,11 +6,13 @@ import ThemeChanger from './theme-changer';
 import AvatarCard from './avatar-card';
 import Details from './details';
 import Skill from './skill';
+import Tech from './tech';
 import Experience from './experience';
 import Certification from './certification';
 import Education from './education';
 import Project from './project';
 import Blog from './blog';
+import Publication from './publication';
 import Footer from './footer';
 import {
   genericError,
@@ -181,6 +183,10 @@ const GitProfile = ({ config }) => {
                         loading={loading}
                         skills={sanitizedConfig.skills}
                       />
+                      <Tech
+                        loading={loading}
+                        techs={sanitizedConfig.techs}
+                      />
                       <Experience
                         loading={loading}
                         experiences={sanitizedConfig.experiences}
@@ -212,6 +218,10 @@ const GitProfile = ({ config }) => {
                         loading={loading}
                         googleAnalytics={sanitizedConfig.googleAnalytics}
                         blog={sanitizedConfig.blog}
+                      />
+                      <Publication
+                        loading={loading}
+                        googleAnalytics={sanitizedConfig.googleAnalytics}
                       />
                     </div>
                   </div>
@@ -264,6 +274,7 @@ GitProfile.propTypes = {
       fileUrl: PropTypes.string,
     }),
     skills: PropTypes.array,
+    techs: PropTypes.array,
     externalProjects: PropTypes.arrayOf(
       PropTypes.shape({
         title: PropTypes.string.isRequired,

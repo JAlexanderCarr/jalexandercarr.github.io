@@ -1,7 +1,7 @@
 import { skeleton } from '../../helpers/utils';
 import PropTypes from 'prop-types';
 
-const Skill = ({ loading, skills }) => {
+const Tech = ({ loading, techs }) => {
   const renderSkeleton = () => {
     let array = [];
     for (let index = 0; index < 12; index++) {
@@ -17,7 +17,7 @@ const Skill = ({ loading, skills }) => {
 
   return (
     <>
-      {skills?.length !== 0 && (
+      {techs?.length !== 0 && (
         <div className="card shadow-lg compact bg-base-100">
           <div className="card-body">
             <div className="mx-3">
@@ -26,7 +26,7 @@ const Skill = ({ loading, skills }) => {
                   skeleton({ width: 'w-32', height: 'h-8' })
                 ) : (
                   <span className="text-base-content opacity-70">
-                    Programming Languages
+                    Tech Stack
                   </span>
                 )}
               </h5>
@@ -35,12 +35,12 @@ const Skill = ({ loading, skills }) => {
               <div className="-m-1 flex flex-wrap justify-center">
                 {loading
                   ? renderSkeleton()
-                  : skills.map((skill, index) => (
+                  : techs.map((tech, index) => (
                       <div
                         key={index}
                         className="m-1 text-xs inline-flex items-center font-bold leading-sm px-3 py-1 badge-primary bg-opacity-90 rounded-full"
                       >
-                        {skill}
+                        {tech}
                       </div>
                     ))}
               </div>
@@ -52,9 +52,9 @@ const Skill = ({ loading, skills }) => {
   );
 };
 
-Skill.propTypes = {
+Tech.propTypes = {
   loading: PropTypes.bool.isRequired,
-  skills: PropTypes.array.isRequired,
+  techs: PropTypes.array.isRequired,
 };
 
-export default Skill;
+export default Tech;
