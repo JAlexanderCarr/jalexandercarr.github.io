@@ -3,11 +3,11 @@
 const config = {
   github: {
     username: 'jalexandercarr', // Your GitHub org/user name. (Required)
-    sortBy: 'updated', // stars | updated
-    limit: 6, // How many projects to display.
+    sortBy: 'stars', // stars | updated
+    limit: 4, // How many projects to display.
     exclude: {
       forks: false, // Forked projects will not be displayed if set to true.
-      projects: [], // These projects will not be displayed. example: ['my-project1', 'my-project2']
+      projects: ['bundledrefs'], // These projects will not be displayed. example: ['my-project1', 'my-project2']
     },
   },
   social: {
@@ -32,20 +32,32 @@ const config = {
       'https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf', // Empty fileUrl will hide the `Download Resume` button.
   },
   skills: [
-    'PHP',
-    'Laravel',
+    'C++',
+    'Python',
+    'Go',
+    'Java',
+    'SQL',
     'JavaScript',
-    'React.js',
-    'Node.js',
-    'Nest.js',
-    'MySQL',
-    'PostgreSQL',
-    'Git',
-    'Docker',
-    'PHPUnit',
+    'HTML',
     'CSS',
-    'Antd',
-    'Tailwind',
+    'Rust',
+    'Clojure',
+    'R',
+    'MATLAB',
+  ],
+  techs: [
+    'Kubernetes',
+    'Docker',
+    'AWS',
+    'Terraform',
+    'ytt',
+    'kapp',
+    'Prometheus',
+    'Envoy',
+    'Istio',
+    'Linux',
+    'ServiceNow',
+    'Jira',
   ],
   experiences: [
     {
@@ -104,11 +116,11 @@ const config = {
     },
   ],
   // Display blog posts from your medium or dev account. (Optional)
-  blog: {
-    source: 'dev', // medium | dev
-    username: 'arifszn', // to hide blog section, keep it empty
-    limit: 2, // How many posts to display. Max is 10.
-  },
+  // blog: {
+  //   source: 'dev', // medium | dev
+  //   username: 'arifszn', // to hide blog section, keep it empty
+  //   limit: 2, // How many posts to display. Max is 10.
+  // },
   googleAnalytics: {
     id: '', // GA3 tracking id/GA4 tag id UA-XXXXXXXXX-X | G-XXXXXXXXXX
   },
@@ -178,11 +190,7 @@ const config = {
   },
 
   // Optional Footer. Supports plain text or HTML.
-  footer: `Made with <a 
-      class="text-primary" href="https://github.com/arifszn/gitprofile"
-      target="_blank"
-      rel="noreferrer"
-    >GitProfile</a> and ❤️`,
+  footer: `© 2023 Alexander Carr`,
 };
 
 export default config;
