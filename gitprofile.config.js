@@ -29,7 +29,7 @@ const config = {
   },
   resume: {
     fileUrl:
-      'https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf', // Empty fileUrl will hide the `Download Resume` button.
+      '', // Empty fileUrl will hide the `Download Resume` button.
   },
   skills: [
     'C++',
@@ -59,22 +59,22 @@ const config = {
     'ServiceNow',
     'Jira',
   ],
-  experiences: [
-    {
-      company: 'Company Name',
-      position: 'Position',
-      from: 'September 2021',
-      to: 'Present',
-      companyLink: 'https://example.com',
-    },
-    {
-      company: 'Company Name',
-      position: 'Position',
-      from: 'July 2019',
-      to: 'August 2021',
-      companyLink: 'https://example.com',
-    },
-  ],
+  // experiences: [
+  //   {
+  //     company: 'Company Name',
+  //     position: 'Position',
+  //     from: 'September 2021',
+  //     to: 'Present',
+  //     companyLink: 'https://example.com',
+  //   },
+  //   {
+  //     company: 'Company Name',
+  //     position: 'Position',
+  //     from: 'July 2019',
+  //     to: 'August 2021',
+  //     companyLink: 'https://example.com',
+  //   },
+  // ],
   /* certifications: [
     {
       name: 'Lorem ipsum',
@@ -83,38 +83,38 @@ const config = {
       link: 'https://example.com'
     },
   ], */
-  education: [
-    {
-      institution: 'Institution Name',
-      degree: 'Degree',
-      from: '2015',
-      to: '2019',
-    },
-    {
-      institution: 'Institution Name',
-      degree: 'Degree',
-      from: '2012',
-      to: '2014',
-    },
-  ],
+  // education: [
+  //   {
+  //     institution: 'Institution Name',
+  //     degree: 'Degree',
+  //     from: '2015',
+  //     to: '2019',
+  //   },
+  //   {
+  //     institution: 'Institution Name',
+  //     degree: 'Degree',
+  //     from: '2012',
+  //     to: '2014',
+  //   },
+  // ],
 
   // To hide the `My Projects` section, keep it empty.
-  externalProjects: [
-    {
-      title: 'Project Name',
-      description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc ut.',
-      imageUrl: 'https://via.placeholder.com/250x250',
-      link: 'https://example.com',
-    },
-    {
-      title: 'Project Name',
-      description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc ut.',
-      imageUrl: 'https://via.placeholder.com/250x250',
-      link: 'https://example.com',
-    },
-  ],
+  // externalProjects: [
+  //   {
+  //     title: 'Project Name',
+  //     description:
+  //       'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc ut.',
+  //     imageUrl: 'https://via.placeholder.com/250x250',
+  //     link: 'https://example.com',
+  //   },
+  //   {
+  //     title: 'Project Name',
+  //     description:
+  //       'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc ut.',
+  //     imageUrl: 'https://via.placeholder.com/250x250',
+  //     link: 'https://example.com',
+  //   },
+  // ],
   // Display blog posts from your medium or dev account. (Optional)
   // blog: {
   //   source: 'dev', // medium | dev
